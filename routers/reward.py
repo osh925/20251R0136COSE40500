@@ -29,5 +29,3 @@ async def generate_reward_endpoint(req: RewardRequest):
         return RewardResult(image=out.image_b64, letter=out.letter)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
-# dearmind_ai 
